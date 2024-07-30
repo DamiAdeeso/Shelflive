@@ -1,0 +1,252 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
+  background: linear-gradient(to right, #834d9b, #d04ed6);
+}
+
+.wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #585858;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.7);
+  transition: all 0.4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+}
+
+.modal__footer {
+  text-align: right;
+  a {
+    color: #585858;
+  }
+  i {
+    color: #d02d2c;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modal__actions {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 2.7rem;
+  border: 1px solid grey;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.modal__add {
+  width: 30%;
+  color: #585858;
+  text-decoration: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__cancel {
+  width: 30%;
+  color: #585858;
+  text-decoration: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiment {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 7rem;
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+  .content {
+    display: flex;
+  }
+  .icon {
+    display: flex;
+    border: 1px solid #0d1e6d;
+    justify-content: center;
+    align-items: center;
+    height: 2.2rem;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+}
+.content__Action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0d1e6d;
+  border-radius: 5px;
+  padding: 0 5px;
+  height: 2.2rem;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+[data-style="button"] {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgba($color: #808080, $alpha: .5);
+}
+.subExp {
+  border: 1px solid #808080;
+  margin: 2rem 0;
+}
+.toggle__action {
+  width: 100%;
+  height: 3.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-items: center;
+  .toggle__content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h2 {
+      margin-right: 10px;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  button {
+    border: 1.5px solid #0d1e6d;
+    width: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+  }
+}
+.table {
+  margin: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 5px;
+  thead {
+    background-color: #1d2777;
+    color: white;
+    height: 4rem;
+  }
+  th:first-child {
+    border-top-left-radius: 15px;
+  }
+  th:last-of-type {
+    border-top-right-radius: 15px;
+  }
+  .status {
+    width: 90%;
+    height: 1.4rem;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  th,
+  td {
+    vertical-align: top;
+    text-align: left;
+    padding: 8px;
+    &.icons {
+      > * {
+        margin-right: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

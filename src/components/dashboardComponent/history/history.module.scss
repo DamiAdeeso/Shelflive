@@ -1,0 +1,63 @@
+.experiment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding:0 10px ;
+    height: 7rem;
+    width:100%;
+    box-shadow: 0 4px 2px -2px gray;
+    .content{
+        display:flex;
+        
+    };
+    .ikon{
+        display:flex;
+        border:1px solid #0d1e6d; 
+        border-radius: 5px;
+        padding: 0 5px;
+        height: 4.2rem;
+        .filter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    };
+    
+}
+.content__Action{
+  display:flex;  
+  align-items: center;
+  justify-content: center;
+  border:1px solid #0d1e6d; 
+  border-radius: 5px;
+  padding: 0 5px;
+  height: 2.2rem;
+  cursor: pointer;
+};
+
+.search {
+    margin: 2px 0 7px 0;;
+    position: relative;
+    flex: 1;
+  
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+    }
+  
+    input[type="text"] {
+      display: block;
+      font-size: 1rem;
+      font-weight: 300;
+      padding:0 0.5rem;
+      padding-left: 3rem;
+      width: 40%;
+      height: 2.15rem;
+      border-radius: 3px;
+      outline: none;
+    }
+  };

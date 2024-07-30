@@ -1,0 +1,38 @@
+.root {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  transition: all .5s ease-in-out;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    background-color: var(--toastify-color-success);
+    cursor: default;
+    color: white;
+    p {
+      margin: 0;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+    &[data-color="error"] {
+      background-color: var(--toastify-color-error);
+    }
+    [data-style="pointer"] {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.root {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 400;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  p {
+    font-size: 600;
+    font-weight: bold;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

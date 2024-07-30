@@ -1,0 +1,68 @@
+section {
+  .experiment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 10px;
+    height: 7rem;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+    .content {
+      display: flex;
+      cursor: pointer;
+    }
+    .content__Action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #0d1e6d;
+      border-radius: 5px;
+      padding: 0 5px;
+      height: 2.2rem;
+    }
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 14px;
+    padding: 7px;
+  }
+
+  .account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .card {
+      p, h2 {
+        pointer-events: none;
+        user-select: none;
+      }
+      margin: 30px;
+      padding: 0 20px;
+      width: 500px;
+      background-color: #ffff;
+      div {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  .icons {
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    svg {
+      cursor: pointer;
+    }
+  }
+}

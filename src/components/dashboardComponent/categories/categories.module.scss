@@ -1,0 +1,113 @@
+.inventory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10px ;
+    box-sizing: border-box;
+    height: 7rem;
+    width:100%;
+    box-shadow: 0 4px 2px -2px gray;
+    .content{
+        display:flex;
+    };
+    .icon{
+        display:flex;
+        border:1px solid #0d1e6d; 
+        justify-content: center;
+        align-items: center;
+        height: 2.2rem;
+        border-radius: 5px;
+        padding: 0 10px;
+    };
+
+}
+.content__Action{
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+    border:1px solid #0d1e6d; 
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 2.2rem;
+};
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}
+.cat{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    p{
+        margin: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        text-transform: capitalize;
+        &:hover {
+            color: #151596;
+        };
+    }
+};
+.active {
+    position: relative;
+    color: "orangered";
+}
+  
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 0.5px;
+    background-color: #0d0d64;
+    color: #0d0d64;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-top: 2rem;
+    thead{
+        background-color: #1d2777;
+        color: white;
+        height: 4rem;
+    };
+    th:first-child{
+        border-top-left-radius:15px ;
+    };
+    th:last-of-type{
+        border-top-right-radius:15px ;
+    };
+    .status{
+        width: 90%;
+        height: 1.4rem;
+        border-radius: 10px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        
+        // width: 30px;
+    };
+    
+    tr:nth-child(even){background-color: #f2f2f2};
+    
+    th,
+      td {
+        vertical-align: top;
+        text-align: left;
+        padding: 8px;
+        &.icons {
+          > * {
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+}

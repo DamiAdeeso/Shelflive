@@ -1,0 +1,212 @@
+
+  .centered {
+    position: fixed;
+    right: 0;
+    top: 48%;
+    transform: translate(-2%, -50%);
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    height: 320px;
+    background: rgb(174, 199, 234);
+    color: white;
+    z-index: 10;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  }
+  
+  .modalHeader {
+    height: 50px;
+    background: white;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  
+  .heading {
+    margin: 0;
+    padding: 10px;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  form {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 35px;
+    .contentTop{
+      height: 50%;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      align-items: center;
+      label{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 45%;
+        height: 100%;
+        input[type="text"], select{
+          width: 80%;
+          height: 60px;
+          border: 1px solid #777;
+          border-radius: 3px;
+          outline: none;
+        }
+      }
+    }
+    .contentBottom{
+      height: 50%;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      align-items: center;
+      &>div{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .search {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          .dPicker {
+                margin: -10px 0 0 -10px;
+                font-size: 1rem;
+                font-weight: 300;
+                width: 90%;
+                height: 2.3rem;
+                border: 1px solid #777;
+                border-radius: 3px;
+                outline: none;
+          }
+          .icon {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-64%);
+            cursor: pointer;
+          }
+        };
+        .contentLast{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          select{
+            width:80%;
+            height:100%;
+            border: 1px solid #777;
+            border-radius: 3px;
+            font-size: 1rem;
+            padding:10px;
+            margin-top: -10px
+          }
+        }
+      };
+    }
+  }
+  
+  .modalActions {
+    position: absolute;
+    bottom: 2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .actionsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    padding: 0 13px;
+  }
+  
+  .closeBtn {
+    cursor: pointer;
+    border: 1px solid green;
+    width: 5%;
+    font-weight: 500;
+    padding: 2px;
+    border: 0.1px solid grey;
+    outline: none;
+    font-size: 18px;
+    background: #0d1e6d;
+    color: #fff;
+    transition: all 0.25s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .closeBtn:hover {
+    font-size: 25px;
+    transition: all 1s ease;
+  }
+  
+  .deleteBtn{
+    border: none;
+    width: 15%;
+    margin-top: 3px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 11px 28px;
+    transition: all 0.25s ease;
+    color: #0d1e6d;
+    background: #ffff;
+    font-weight: 700;
+    border: 1px solid #0d1e6d;
+    border-radius: 5px;
+  }
+  
+  .deleteBtn:hover {
+    transform: translate(3px);
+    transition: all 0.7s ease;
+    background:#ed4444 ;
+    border: none;
+    color: #ffff;
+
+  }
+  .cancelBtn {
+    border: none;
+    width: 15%;
+    margin-top: 3px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 11px 28px;
+    transition: all 0.25s ease;
+    color: #fff;
+    background: #0d1e6d;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  
+  .cancelBtn:hover {
+    transform: translate(3px);
+    transition: all 0.7s ease;
+    background: #ffff;
+    color:#0d1e6d;
+  }

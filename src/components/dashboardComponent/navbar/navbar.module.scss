@@ -1,0 +1,60 @@
+.navbar {
+    border-right: 1px solid #ccc;
+    height: 1000px;
+    font-weight: 600;
+    background-color: #092966;
+    position: fixed;
+    width: 24%;
+    //left: 0;
+  // nav{
+
+  // }
+    nav ul {
+        list-style-type: none;
+        
+      li {
+        border-bottom: 1px solid #ccc;
+        padding: 1rem;
+        position: relative;
+        
+        // a {
+        //   display: block;
+        //   width: 100%;
+        //   text-decoration: none;
+        //   color:#ccc
+        // }
+      }
+    }
+  }
+  
+  .active {
+    cursor: pointer;
+  }
+  
+  .active::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+
+    // right:0;
+    // top: 0;
+    // width:100%;
+    height: 100%;
+    background-color: #E88938;
+    border-radius: 50%;
+  }
+
+  .content a{
+    display: flex;
+    color: #fff;
+    position:relative;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .icon{
+    margin-right: 9px;
+    top: 4rem;
+  }

@@ -1,0 +1,18 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 25fr 75fr;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  min-width: 100%;
+
+  .navbar {
+    box-sizing: border-box;
+    min-height: 80vh;
+    min-width: 25%;
+  }
+  .content {
+    padding: 1rem;
+    min-width: 75%;
+    box-sizing: border-box;
+  }
+}

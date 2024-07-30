@@ -1,0 +1,124 @@
+.auth {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+    .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: slide-down 0.5s ease;
+
+        .img__content{
+            position: absolute;
+            top:20px;
+            left: 10px;
+        }
+    }
+  
+    .form {
+        //border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        
+        width: 25rem;
+        height: 100vh;
+        animation: slide-up 0.5s ease;
+        //padding-top: 4rem;
+        //margin: auto;
+      .header {
+        color: #1d2777;
+        margin-left: 0.5rem;
+        line-height: 28%;
+        h2{
+            margin-bottom: 2rem;
+        }
+      }
+      form {
+        label{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 15px 0;
+            p{
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 3%;
+            };
+            span{
+                cursor: pointer;
+                position: absolute;
+                right: 9rem;
+                top: 24.4rem;
+            }
+        }
+
+        /* fixed icon password */
+        label[data-style="icon"] {
+          position: relative;
+          span {
+            position: absolute;
+            max-width: max-content;
+            top: 0;
+            left: 80px;
+            transform: translateY(50%);
+          }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          font-size: 1rem;
+          font-weight: 300;
+          padding: 0.5rem;
+          width: 92%;
+          border: 1px solid #777;
+          border-radius: 3px;
+          outline: none;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            line-height: 3%
+        }
+
+        .links {
+            height: 1.4rem;
+            list-style: none;
+            text-decoration: none;
+            color: #1d2777;
+            position: absolute;
+            bottom: 15rem;
+            right: 8rem;
+            cursor: pointer;
+          }
+      
+        button{
+            width: 97%;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1d2777;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+      }
+      .register {
+        width: 97%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .reg__link{
+            text-decoration: none;
+            list-style: none;
+            color: "#1d2777";
+        }
+      }
+    }
+  
+  }
+    

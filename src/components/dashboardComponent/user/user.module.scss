@@ -1,0 +1,87 @@
+.index {
+  h1 {
+    text-transform: capitalize;
+    color: #1d2777;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-top: 2rem;
+    thead {
+      background-color: #1d2777;
+      color: white;
+      height: 4rem;
+    }
+    th:first-child {
+      border-top-left-radius: 15px;
+    }
+    th:last-of-type {
+      border-top-right-radius: 15px;
+    }
+    .status {
+      width: 90%;
+      height: 1.4rem;
+      border-radius: 10px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+      text-transform: capitalize;
+      &.icons {
+        > * {
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    tr {
+      td {
+        &:last-of-type {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            svg {
+                cursor: pointer;
+            }
+        }
+        &:is(:nth-of-type(1),:nth-of-type(2)) {
+            text-transform: uppercase;
+        }
+        &:nth-last-of-type(3) {
+            text-transform: none;
+        }
+        span {
+            padding: 5px 10px;
+            border-radius: 3px;
+            background-color: #07bc0c;
+            font-weight: bolder;
+            font-size: .9rem;
+            color: white;
+            &[data-verify="false"] {
+            background-color: #e74c3c;
+            }
+        }
+      }
+    }
+  }
+}
+
+.search_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  button {
+    white-space: nowrap;
+    font-weight: bolder;
+    span {
+      padding: 0 10px;
+    }
+  }
+}

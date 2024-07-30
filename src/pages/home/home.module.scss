@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .home__link{
+        text-decoration: none;
+        border: 1px solid #1d2777;
+        border-radius: 5px;
+        padding: 0.5rem;
+        color: #fff;
+        background-color: #1d2777;;
+    }
+}

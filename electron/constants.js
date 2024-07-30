@@ -1,0 +1,21 @@
+module.exports.channel = {
+  LOGIN: "login",
+  SIGNUP: "signup",
+  ADD_CATEGORY: 'add:category',
+  GET_CATEGORIES: 'get:categories',
+  ADD_ITEM: 'add:item',
+  GET_ITEMS: 'get:items',
+  DELETE_ITEM: 'delete:item',
+  GET_ARCHIVES: 'get:archives',
+  EDIT_ITEM: 'edit:item',
+  GET_HISTORY: 'get:history',
+  GET_INFO: 'get:info',
+  GET_USERS: 'get:users',
+  DELETE_USER: 'delete:user',
+  VERIFY_USER: 'verify:user',
+  GET_EXP: 'get:exp',
+  ADD_EXP: 'add:exp',
+  ADD_STUDENT: 'add:student',
+  EDIT_STUDENT: 'edit:student',
+  DELETE_STUDENT: 'delete:student'
+};
