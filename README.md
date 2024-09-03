@@ -55,7 +55,7 @@ Shelf Life LIMS is a Laboratory Information Management System designed to manage
 
 1. Clone the repository.
    ```sh
-   git clone https://github.com/yourusername/shelf-life-lims.git
+   git clone https://github.com/DamiAdeeso/Shelflive.git
 2. Install dependencies.
 cd shelf-life-lims
 ### npm install
